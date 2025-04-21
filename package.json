@@ -1,0 +1,75 @@
+{
+  "name": "frontend-seed-5",
+  "version": "1.1.5",
+  "description": "A basic HTML starter template for Bootstrap 5",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "homepage": "https://github.com/trungnghia112/frontend-seed-5",
+  "author": "trungnghia112 <trungnghia112@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/trungnghia112/frontend-seed-5/issues",
+    "email": "trungnghia112@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trungnghia112/frontend-seed-5"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "prettier": "prettier ./**/*.{json,md,scss} --write",
+    "copy:third_party": "node tools/cp-third_party.js",
+    "build": "npm run copy:third_party && npm run prettier && gulp build",
+    "release": "standard-version -a",
+    "release-as": "standard-version --release-as",
+    "release-minor": "standard-version minor -a",
+    "publish": "git push --follow-tags origin main && npm publish"
+  },
+  "engines": {
+    "node": ">=6.9.0",
+    "npm": ">=3.10.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/register": "^7.25.9",
+    "browser-sync": "^3.0.3",
+    "eslint": "^9.22.0",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-purgecss": "^7.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-size": "4.0.1",
+    "gulp-uglify": "^3.0.2",
+    "prettier": "^3.5.3",
+    "sass": "1.77.6",
+    "fs-extra": "^11.3.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "5.3.3"
+  }
+}

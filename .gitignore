@@ -1,0 +1,11 @@
+node_modules
+dist
+.tmp
+bower_components
+test/bower_components
+.idea
+
+*_BAK*
+/npm-debug.log
+/yarn.lock
+!third_party/node_modules
