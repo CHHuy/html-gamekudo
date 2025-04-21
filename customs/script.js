@@ -19,7 +19,7 @@ function detectDevice() {
     }
   }
 
-  console.log(device)
+  // console.log(device)
 }
 
 detectDevice()
