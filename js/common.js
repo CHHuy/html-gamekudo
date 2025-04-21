@@ -108,9 +108,38 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
     }
   }
 
+  function detailSwiper() {
+    const screenShoot = document.getElementById('screenshots')
+
+    if (screenShoot) {
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+
+        // If we need pagination
+        // pagination: {
+        //   el: '.swiper-pagination'
+        // },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: '.swiper-scrollbar'
+        // }
+      })
+    }
+  }
+
   function init() {
     getBarwidth()
     lazyLoadPlaceHolder()
+    detailSwiper()
   }
 
   init()
